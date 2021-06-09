@@ -18,11 +18,11 @@ public class ProdutoDAO {
                 statement.execute("CREATE TABLE IF NOT EXISTS produtos (" +
                         "id serial NOT NULL PRIMARY KEY," +
                         "nome VARCHAR(60) NOT NULL," +
-                        "descricao VARCHAR(60) DEFAULT ''," +
+                        "descricao VARCHAR(255) DEFAULT ''," +
                         "ingredientes TEXT NOT NULL DEFAULT ''," +
                         "valor numeric(8, 2) NOT NULL," +
                         "estoque INTEGER NOT NULL," +
-                        "pizza BOOLEAN NOT NULL" + // alterar para TamanhoPizza / Se for null ñ é uma pizza
+                        "pizza BOOLEAN NOT NULL" +
                         ")");
             }
             connection.close();

@@ -153,10 +153,9 @@ public class ProdutoController extends RollbackServlet {
             return "O nome deve ter entre 3-30 caracteres.";
         }
 
-        if (produto.getDescricao().length() < 3 || produto.getDescricao().length() > 60) {
-            return "A descrição deve ter entre 3-30 caracteres.";
-        }
-
+        if(produto.getDescricao() == null)
+            produto.setDescricao("");
+            
         if(produto.getIngredientes() == null)
             produto.setIngredientes("");
 
