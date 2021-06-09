@@ -173,7 +173,7 @@ public class CarrinhoController extends RollbackServlet {
 
                 sendSuccessMessage("Pedido realizado com sucesso!", request, response);
 
-            } else if (action.equals("Salvar Anotação")) {
+            } else if (action.equals("Salvar Anotacao")) {
                 Pedido carrinho = (Pedido) request.getSession().getAttribute("carrinho");
 
                 if (carrinho == null) {

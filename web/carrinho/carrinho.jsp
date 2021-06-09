@@ -57,7 +57,7 @@
     <br>
     <label for="txAnotacao">Anotação:</label>
     <textarea id="txAnotacao" name="txAnotacao" rows="4" cols="50"><%=carrinho.getAnotacao()%></textarea>
-    <input type="submit" name="action" value="Salvar Anotação">
+    <input type="submit" name="action" value="Salvar Anotacao">
     <br>
     <br>
     <input type="submit" name="action" value="Finalizar Compra">
