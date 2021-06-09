@@ -32,7 +32,7 @@
 <h1>Listar Produtos</h1>
 
 <h2>Carrinho de: <%=pedido.getCliente().getNome()%></h2>
-<h2>Total atual: <%=pedido.getTotal()%></h2>
+<h2>Total atual: R$<%=pedido.getTotal()%></h2>
 
 <table border="1">
     <tr><th>Id</th><th>Nome</th><th>Descrição</th><th>Ingredientes</th><th>Valor</th><th>Estoque</th><th>Tipo</th><th>Adicionar</th></tr>

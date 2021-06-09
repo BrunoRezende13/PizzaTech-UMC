@@ -125,7 +125,7 @@ public class AdminController extends RollbackServlet {
     }
 
     private void actionInfo(String action, HttpServletRequest request, HttpServletResponse response) throws Exception {
-        if ("Informações".equals(action)) {
+        if ("Informacoes".equals(action)) {
             request.getRequestDispatcher("analise/exibir.jsp").forward(request, response);
         } else {
             sendErrorMessage("Ação não encontrada.", request, response);

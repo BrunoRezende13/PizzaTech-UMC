@@ -37,7 +37,7 @@
     Funcionário...: <%=pedido.getFuncionario().getNome()%> <br>
     Status......: <%=pedido.getStatus().getNome()%> <br>
     Anotação......: <%=pedido.getAnotacao()%> <br>
-    Valor Total....: <%=pedido.getTotal()%> <br>
+    Valor Total....: R$<%=pedido.getTotal()%> <br>
 
     <br>
     <br>

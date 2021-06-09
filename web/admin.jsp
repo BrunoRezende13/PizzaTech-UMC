@@ -91,7 +91,7 @@
     <legend>Análise</legend>
     <form name="InfoForm" method="post" action="AdminController">
         <br/>
-        <input type="Submit" name="action-i" value="Informações" />
+        <input type="Submit" name="action-i" value="Informacoes" />
     </form>
 </fieldset>
 </body>
