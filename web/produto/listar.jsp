@@ -1,3 +1,4 @@
+<%@page import="java.text.DecimalFormat"%>
 <%@ page import="br.umc.pizzatech.model.conta.Autenticador" %>
 <%@ page import="java.util.List" %>
 <%@ page import="br.umc.pizzatech.model.pessoa.funcionario.LevelAcesso" %>
@@ -52,7 +53,7 @@
         <td><%= produto.getNome()%></td>
         <td><%= produto.getDescricao()%></td>
         <td><%= produto.getIngredientes()%></td>
-        <td>R$ <%= produto.getValor()%></td>
+        <td>R$ <%= new DecimalFormat("00.00").format(produto.getValor())%></td>
         <td><%= produto.getEstoque()%></td>
         <td><%= produto.getTipo()%></td>
         <td>

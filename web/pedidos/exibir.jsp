@@ -1,3 +1,4 @@
+<%@page import="java.text.DecimalFormat"%>
 <%@ page import="br.umc.pizzatech.model.conta.Autenticador" %>
 <%@ page import="br.umc.pizzatech.model.pessoa.funcionario.LevelAcesso" %>
 <%@ page import="br.umc.pizzatech.model.pedido.Pedido" %>
@@ -37,7 +38,7 @@
     Funcionário...: <%=pedido.getFuncionario().getNome()%> <br>
     Status......: <%=pedido.getStatus().getNome()%> <br>
     Anotação......: <%=pedido.getAnotacao()%> <br>
-    Valor Total....: R$ <%=pedido.getTotal()%> <br>
+    Valor Total....: R$ <%=new DecimalFormat("00.00").format(pedido.getTotal())%> <br>
 
     <br>
     <br>
@@ -56,7 +57,7 @@
         <tr>
             <td><%= produto.getProduto().getNome()%></td>
             <td><%= produto.getQuantidade()%></td>
-            <td>R$ <%= produto.getTotal()%></td>
+            <td>R$ <%= new DecimalFormat("00.00").format(produto.getTotal())%></td>
         </tr>
 
         <% }%>
