@@ -14,6 +14,7 @@
     if (!Autenticador.hasAccess(session, LevelAcesso.ATENDENTE)) {
 %>
 <h1>Página disponivel somente para funcionários logados.</h1>
+<a href="../login.jsp">Voltar</a>
 <%
         return;
     }
