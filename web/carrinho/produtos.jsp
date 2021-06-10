@@ -63,7 +63,7 @@
         <td><%= produto.getNome()%></td>
         <td><%= produto.getDescricao()%></td>
         <td><%= produto.getIngredientes()%></td>
-        <td><%= produto.getValor()%></td>
+        <td>R$ <%= String.format("%02d", produto.getValor())%></td>
         <td><%= produto.getEstoque()%></td>
         <td><%= produto.getTipo()%></td>
         <td>

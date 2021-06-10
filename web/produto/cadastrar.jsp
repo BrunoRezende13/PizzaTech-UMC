@@ -24,7 +24,7 @@
     Nome.........: <input type="text" name="txNome"> <br>
     Descrição......: <input type="text" name="txDescricao"> <br>
     Ingredientes...: <input type="text" name="txIngrediente"> <br>
-    Valor........: <input type="number" step="0.01" name="txValor"> <br>
+    Valor........: R$ <input type="number" step="0.01" name="txValor"> <br>
     Estoque..: <input type="number" name="txEstoque"> <br>
 
     Tipo do produto..:

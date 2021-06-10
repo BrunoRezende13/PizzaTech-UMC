@@ -44,7 +44,7 @@
     <tr>
         <td><a href="${pageContext.request.contextPath}/carrinho/CarrinhoController?action=ProdutoRemover&txId=<%=item.getProduto().getId()%>">X</a></td>
         <td><%=item.getProduto().getNome() %></td>   <td><%=item.getQuantidade()  %></td>    <td><%=item.getProduto().getValor()%></td>
-        <td><%=item.getTotal()%></td>
+        <td>R$ <%=item.getTotal()%></td>
         <td><a href="${pageContext.request.contextPath}/carrinho/CarrinhoController?action=ProdutoAdicionar&txId=<%=item.getProduto().getId()%>">+</a></td>
     </tr>
     <% } %>

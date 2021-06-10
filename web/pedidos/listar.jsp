@@ -99,7 +99,7 @@
         <td><%= pedido.getId()%></td>
         <td><%= pedido.getCliente().getNome()%></td>
         <td><%= pedido.getAnotacao()%></td>
-        <td><%= pedido.getTotal()%></td>
+        <td>R$ <%= String.format("%02d", pedido.getTotal())%></td>
         <td><%= pedido.getFuncionario().getNome()%></td>
         <td>
             <a href="${pageContext.request.contextPath}/PedidoController?txId=<%=pedido.getId()%>&action=Pesquisar">
