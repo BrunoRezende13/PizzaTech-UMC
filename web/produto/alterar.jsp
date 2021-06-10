@@ -33,7 +33,7 @@
     Nome.........: <input type="text" name="txNome" value="<%=produto.getNome()%>"> <br>
     Descrição......: <input type="text" name="txDescricao" value="<%=produto.getDescricao()%>"> <br>
     Ingredientes...: <input type="text" name="txIngrediente" value="<%=produto.getIngredientes()%>"> <br>
-    Valor........: <input type="number" name="txValor" value="<%=produto.getValor()%>"> <br>
+    Valor........: R$<input type="number" name="txValor" value="<%=produto.getValor()%>"> <br>
     Estoque..: <input type="number" name="txEstoque" value="<%=produto.getEstoque()%>"> <br>
 
     Tipo do produto..:

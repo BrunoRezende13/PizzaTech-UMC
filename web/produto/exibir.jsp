@@ -34,7 +34,7 @@
     Nome.......: <%=produto.getNome()%> <br>
     Descrição........: <%=produto.getDescricao()%> <br>
     Ingredientes......: <%=produto.getIngredientes()%> <br>
-    Preço......: <%=produto.getValor()%> <br>
+    Preço......: R$<%=produto.getValor()%> <br>
     Estoque......: <%=produto.getEstoque()%> <br>
     Tipo......: <%=produto.getTipo()%> <br>
 

@@ -9,7 +9,7 @@
 <body>
 
 <%
-    if (!Autenticador.hasAccess(session, LevelAcesso.ATENDENTE)) {
+    if (!Autenticador.hasAccess(session, LevelAcesso.GERENTE)) {
 %>
 <h1>Página disponivel somente para funcionários logados.</h1>
 <%

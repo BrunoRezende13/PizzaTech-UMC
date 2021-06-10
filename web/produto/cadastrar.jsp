@@ -24,12 +24,12 @@
     Nome.........: <input type="text" name="txNome"> <br>
     Descrição......: <input type="text" name="txDescricao"> <br>
     Ingredientes...: <input type="text" name="txIngrediente"> <br>
-    Valor........: <input type="number" name="txValor"> <br>
+    Valor........: <input type="number" step="0.01" name="txValor"> <br>
     Estoque..: <input type="number" name="txEstoque"> <br>
 
     Tipo do produto..:
     <input type="radio" id="produto" name="produto_modo" value="produto" checked>
-    <label for="produto">Normal</label>
+    <label for="produto">Bebida</label>
     <input type="radio" id="pizza" name="produto_modo" value="pizza">
     <label for="pizza">Pizza</label><br>
 
