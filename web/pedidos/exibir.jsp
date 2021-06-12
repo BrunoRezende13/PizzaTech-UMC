@@ -39,7 +39,7 @@
     Funcionário...: <%=pedido.getFuncionario().getNome()%> <br>
     Status......: <%=pedido.getStatus().getNome()%> <br>
     Anotação......: <%=pedido.getAnotacao()%> <br>
-    Valor Total....: R$ <%=new DecimalFormat("00.00").format(pedido.getTotal())%> <br>
+    Valor Total....: R$ <%=new DecimalFormat("0.00").format(pedido.getTotal())%> <br>
 
     <br>
     <br>

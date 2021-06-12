@@ -54,7 +54,7 @@
         <td><%= produto.getNome()%></td>
         <td><%= produto.getDescricao()%></td>
         <td><%= produto.getIngredientes()%></td>
-        <td>R$ <%= new DecimalFormat("00.00").format(produto.getValor())%></td>
+        <td>R$ <%= new DecimalFormat("0.00").format(produto.getValor())%></td>
         <td><%= produto.getEstoque()%></td>
         <td><%= produto.getTipo()%></td>
         <td>

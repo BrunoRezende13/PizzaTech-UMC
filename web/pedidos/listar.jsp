@@ -101,7 +101,7 @@
         <td><%= pedido.getId()%></td>
         <td><%= pedido.getCliente().getNome()%></td>
         <td><%= pedido.getAnotacao()%></td>
-        <td>R$ <%= new DecimalFormat("00.00").format(pedido.getTotal())%></td>
+        <td>R$ <%= new DecimalFormat("0.00").format(pedido.getTotal())%></td>
         <td><%= pedido.getFuncionario().getNome()%></td>
         <td>
             <a href="${pageContext.request.contextPath}/PedidoController?txId=<%=pedido.getId()%>&action=Pesquisar">

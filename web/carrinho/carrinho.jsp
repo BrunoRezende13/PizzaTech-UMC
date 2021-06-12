@@ -1,3 +1,4 @@
+<%@page import="java.text.DecimalFormat"%>
 <%@ page import="br.umc.pizzatech.model.pedido.Pedido" %>
 <%@ page import="br.umc.pizzatech.model.pedido.carrinho.ProdutoCarrinho" %>
 <%@ page import="br.umc.pizzatech.model.conta.Autenticador" %>
@@ -36,21 +37,22 @@
     <caption>Carrinho de Compras</caption>
     <tr>
         <td>Excluir</td><td>Item</td><td>Quantidade</td>
-        <td>Preço Unitário</td><td>total Item</td><td>+1</td>
+        <td>Preço Unitário</td><td>Total Item</td><td>+1</td>
     </tr>
     <%
         for(ProdutoCarrinho item : carrinho.getItens()){
     %>
     <tr>
         <td><a href="${pageContext.request.contextPath}/carrinho/CarrinhoController?action=ProdutoRemover&txId=<%=item.getProduto().getId()%>">X</a></td>
-        <td><%=item.getProduto().getNome() %></td>   <td><%=item.getQuantidade()  %></td>    <td><%=item.getProduto().getValor()%></td>
-        <td>R$ <%=item.getTotal()%></td>
+        <td><%=item.getProduto().getNome() %></td>   <td><%=item.getQuantidade()  %></td>   
+        <td>R$ <%=new DecimalFormat("0.00").format(item.getProduto().getValor())%></td>
+        <td>R$ <%=new DecimalFormat("0.00").format(item.getTotal())%></td>
         <td><a href="${pageContext.request.contextPath}/carrinho/CarrinhoController?action=ProdutoAdicionar&txId=<%=item.getProduto().getId()%>">+</a></td>
     </tr>
     <% } %>
 
 </table>
-<h1>Valor Total: <%=carrinho.getTotal()%></h1>
+<h1>Valor Total: R$ <%=new DecimalFormat("0.00").format(carrinho.getTotal())%></h1>
 <br>
 
 <form action="CarrinhoController" method="post">
