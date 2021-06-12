@@ -32,8 +32,8 @@
     Id.......: <%=cliente.getId()%> <br>
     Nome.......: <input type="text" name="txNome" value="<%=cliente.getNome()%>"> <br>
     Cpf........: <input type="text" name="txCpf" value="<%=cliente.getCpf()%>"> <br>
-    Endereço......: <input type="text" name="txEmail" value="<%=cliente.getEndereco()%>"> <br>
-    Telefone......: <input type="text" name="txSenha" value="<%=cliente.getTelefone()%>"> <br>
+    Endereço......: <input type="text" name="txEndereco" value="<%=cliente.getEndereco()%>"> <br>
+    Telefone......: <input type="text" name="txTelefone" value="<%=cliente.getTelefone()%>"> <br>
     <br>
     <br>
     <input type="submit" name="action" value="Alterar">
