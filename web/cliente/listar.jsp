@@ -52,12 +52,12 @@
             </a>
         </td>
         <td>
-            <a href="${pageContext.request.contextPath}/ClienteController?txId=<%=cliente.getId()%>&action=Alterar">
+            <a href="${pageContext.request.contextPath}/ClienteListarController?txId=<%=cliente.getId()%>&action=Alterar">
                 <img src="img/editar.png" style="width:40px;height:40px;">
             </a>
         </td>
         <td>
-            <a href="${pageContext.request.contextPath}/ClienteController?txId=<%=cliente.getId()%>&action=Remover">
+            <a href="${pageContext.request.contextPath}/ClienteListarController?txId=<%=cliente.getId()%>&action=Remover">
                 <img src="img/deletar.png" style="width:40px;height:40px;">
             </a>
         </td>
