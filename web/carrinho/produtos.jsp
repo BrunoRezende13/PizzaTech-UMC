@@ -47,8 +47,8 @@
             try {
                 list = new ProdutoDAO().buscarTodos();
                 request.setAttribute("lista", list);
-            } catch (Exception exception) {
-                exception.printStackTrace();
+            } catch (Exception exceptio) {
+                exceptio.printStackTrace();
                 request.setAttribute("erro", "Ocorreu um erro ao listar.");
                 request.setAttribute("rollback", "admin.jsp");
                 request.getRequestDispatcher("erro.jsp").forward(request, response);
@@ -78,9 +78,6 @@
 </table>
 <br>
 <br>
-<form action="FuncionarioController" method="POST">
-    <input type="submit" name="action" value="Voltar">
-</form>
 
 </body>
 </html>

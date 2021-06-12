@@ -82,8 +82,8 @@
                     List<ProdutoCarrinho> produtoCarrinhos = pedidoDAO.buscarTodos(pedido);
                     pedido.setItens(produtoCarrinhos);
                 }
-            } catch (Exception exception) {
-                exception.printStackTrace();
+            } catch (Exception exceptio) {
+                exceptio.printStackTrace();
                 request.setAttribute("erro", "Ocorreu um erro ao listar.");
                 request.setAttribute("rollback", "admin.jsp");
                 request.getRequestDispatcher("erro.jsp").forward(request, response);
@@ -99,10 +99,10 @@
 
     <tr>
         <td><%= pedido.getId()%></td>
-        <td><%= pedido.getCliente().getNome()%></td>
+        <td><%= pedido.getCliente() == null ? "Cliente não encontrado" : pedido.getCliente().getNome()%></td>
         <td><%= pedido.getAnotacao()%></td>
         <td>R$ <%= new DecimalFormat("0.00").format(pedido.getTotal())%></td>
-        <td><%= pedido.getFuncionario().getNome()%></td>
+        <td><%= pedido.getFuncionario() == null ? "Funcionario não encontrado" : pedido.getFuncionario().getNome() %></td>
         <td>
             <a href="${pageContext.request.contextPath}/PedidoController?txId=<%=pedido.getId()%>&action=Pesquisar">
                 <img src="img/detalhes.png" style="width:40px;height:40px;">
@@ -121,7 +121,7 @@
         %>
     </tr>
 
-    <% }%>
+    <% } %>
 </table>
 <br>
 <br>

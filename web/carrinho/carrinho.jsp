@@ -41,6 +41,7 @@
     </tr>
     <%
         for(ProdutoCarrinho item : carrinho.getItens()){
+            item.calcularTotal();
     %>
     <tr>
         <td><a href="${pageContext.request.contextPath}/carrinho/CarrinhoController?action=ProdutoRemover&txId=<%=item.getProduto().getId()%>">X</a></td>
