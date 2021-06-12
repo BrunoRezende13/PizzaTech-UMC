@@ -26,7 +26,7 @@
 
 %>
 
-<h1>Cadastrar Cliente</h1>
+<h1>Alterar Cliente</h1>
 <form action="ClienteController" method="POST">
     <br>
     Id.......: <%=cliente.getId()%> <br>

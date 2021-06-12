@@ -26,14 +26,14 @@
 
 %>
 
-<h1>Cadastrar Funcionario</h1>
+<h1>Alterar Funcionario</h1>
 <form action="FuncionarioController" method="POST">
     <br>
     Id.......: <%=funcionario.getId()%> <br>
     Nome.......: <input type="text" name="txNome" value="<%=funcionario.getNome()%>"> <br>
     Cpf........: <input type="text" name="txCpf" value="<%=funcionario.getCpf()%>"> <br>
     Email......: <input type="email" name="txEmail" value="<%=funcionario.getEmail()%>"> <br>
-    Senha......: <input type="password" name="txSenha"> <br>
+    Senha......: <input type="password" name="txSenha" value="<%=funcionario.getSenha()%>"> <br>
     Level de Acesso: <select name="selLevel" value="<%=funcionario.getLevelAcesso().getId()%>">
     <%
         for (LevelAcesso cat : LevelAcesso.values()) {
