@@ -151,6 +151,11 @@ public class CarrinhoController extends RollbackServlet {
                     sendErrorMessage("Carrinho não encontrado.", request, response);
                     return;
                 }
+           
+                if (carrinho.getItens().isEmpty()) {
+                    sendErrorMessage("Nenhum produto selecionado.", request, response);
+                    return;
+                }
 
                 for (ProdutoCarrinho item : carrinho.getItens()) {
                     if(!item.verificarEstoque()){
