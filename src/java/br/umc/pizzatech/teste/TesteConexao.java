@@ -15,7 +15,7 @@ public class TesteConexao {
             funcionario.setNome("Teste");
             funcionario.setCpf("81246638665");
             funcionario.setSenha("6551ds");
-            funcionario.setEmail("email.bruno@gmai.com");
+            funcionario.setEmail("email@gmail.com");
             funcionarioDAO.cadastrar(funcionario);
 
 
