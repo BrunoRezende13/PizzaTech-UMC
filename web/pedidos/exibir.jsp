@@ -35,8 +35,8 @@
 <form action="PedidoController" method="POST">
     <br>
     Id.........: <%=pedido.getId()%> <br>
-    Cliente......: <%=pedido.getCliente().getNome()%> <br>
-    Funcionário...: <%=pedido.getFuncionario().getNome()%> <br>
+    Cliente......: <%=(pedido.getCliente() == null ? "Não encontrado" : pedido.getCliente().getNome())%> <br>
+    Funcionário...: <%=(pedido.getFuncionario() == null ? "Não encontrado" : pedido.getFuncionario().getNome() )%> <br>
     Status......: <%=pedido.getStatus().getNome()%> <br>
     Anotação......: <%=pedido.getAnotacao()%> <br>
     Valor Total....: R$ <%=new DecimalFormat("0.00").format(pedido.getTotal())%> <br>

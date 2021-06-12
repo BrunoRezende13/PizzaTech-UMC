@@ -75,7 +75,8 @@ public class Pedido {
     public double getTotal() {
         double total = 0;
         for (ProdutoCarrinho item : itens) {
-            total += item.calcularTotal();
+            item.calcularTotal();
+            total += item.getTotal();
         }
         return total;
     }
